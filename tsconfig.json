@@ -3,6 +3,16 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@env/*": ["environment/*"],
+      "@app/*": ["app/*"],
+      "@layout/*": ["app/layout/*"],
+      // "@core/*": ["app/core/*"],
+      // "@shared/*": ["app/shared/*"],
+      // "@components/*": ["app/shared/components/*"],
+      // "@modules/*": ["app/modules/*"],
+      // "@data/*": ["app/data/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -18,10 +28,7 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ]
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

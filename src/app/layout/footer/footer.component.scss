@@ -1,0 +1,11 @@
+// For the direct notation of SCSS files, add the stylepreprocessoropryns attribute in angular.json
+@import '__colors.scss';
+@import '__fonts.scss';
+
+
+// SCSS Variable Test
+p{
+color: $primary_footer;
+font-family: $font-footer;
+
+}
