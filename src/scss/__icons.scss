@@ -1,0 +1,13 @@
+:root {
+  --sun-icon: url("../assets/icons/toggle-theme/sunny.png");
+  --sunColor-icon: url("../assets/icons/toggle-theme/sunny_color.png");
+
+  --moon-icon: url("../assets/icons/toggle-theme/moon.png");
+  --moonColor-icon: url("../assets/icons/toggle-theme/moon_color.png");
+}
+
+
+$sun-icon: var(--sun-icon);
+$sunColor-icon: var(--sunColor-icon);
+$moon-icon: var(--moon-icon);
+$moonColor-icon: var(--moonColor-icon);
