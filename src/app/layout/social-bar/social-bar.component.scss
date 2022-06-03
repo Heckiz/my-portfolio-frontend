@@ -1,0 +1,102 @@
+// For the direct notation of SCSS files, add the stylepreprocessoropryns attribute in angular.json
+@import "__colors.scss";
+@import "__fonts.scss";
+@import "__responsive_mixin";
+
+section {
+  width: 100%;
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  background-color: var(--nav-bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    padding: 2rem;
+  }
+  .social-bar-toggle {
+    background-color: var(--nav-bg-color);
+    width: 85%;
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    @include tablet {
+      display: none;
+    }
+    input {
+      display: none;
+    }
+    .toggle-icon {
+      background-image: url('/assets/icons/social/social-networks.png');
+      display: flex;
+      width: 35px;
+      height: 35px;
+      transform: scale(0.8);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: ease-in-out 0.2s;
+    }
+    .toggle-icon-active {
+      filter: none;
+      background-image: url('/assets/icons/social/social-networks_color.png');
+      transform: scale(1.0);
+      
+
+    }
+    .toggle-icon :hover {
+      filter: none;
+      transform: scale(0.9);
+      transition: all 0.5s ease;
+    }
+  }
+
+  .social-bar {
+    width: 75vw;
+    height: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    border-radius: 10px;
+    position: fixed;
+    left: 100%;
+    bottom: 2vh;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+
+    @include tablet {
+      background-color: transparent;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      height: max-content;
+
+    }
+    img {
+      width: 35px;
+      height: 35px;
+      @include tablet{
+        width: 45px;
+        height: 45px;
+      }
+      margin: 0.8rem;
+      transition: transform ease-in-out 0.2s;
+      &:hover {
+        cursor: pointer;
+        filter: none;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .active {
+    left: 5vw;
+    border: 2px solid var(--text-color) ;
+    mask-border-outset: 2px;
+  }
+}

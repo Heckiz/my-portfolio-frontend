@@ -1,0 +1,20 @@
+<section>
+    <div class="social-bar-toggle">
+        <input id="toggle" type="button" (click)='toggleSocialBar()' />
+        <label class="links toggle-icon " for="toggle" 
+        [ngClass]="socialBarOpen ? 'toggle-icon-active' : ''">
+        </label>
+    </div>
+
+    <div class="social-bar" [ngClass]="socialBarOpen ?  'active' : ''">
+
+        <img alt="linkedin-icon" src="{{'assets/icons/social/'+ linkedinIcon + '.png'}}"
+            (mouseover)="iconWithColor(true,'linkedin')" (mouseout)="iconWithColor(false,'linkedin')" class="links" />
+
+        <img alt="github-icon" src="{{'assets/icons/social/'+ githubIcon + '.png'}}"
+            (mouseover)="iconWithColor(true,'github')" (mouseout)="iconWithColor(false,'github')" class="links" />
+
+        <img alt="twitter-icon" src="{{'assets/icons/social/'+ twitterIcon + '.png'}}"
+            (mouseover)="iconWithColor(true,'twitter')" (mouseout)="iconWithColor(false,'twitter')" class="links" />
+    </div>
+</section>

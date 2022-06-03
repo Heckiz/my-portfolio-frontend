@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { SocialBarComponent } from './layout/social-bar/social-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FooterComponent
+    SocialBarComponent
   ],
   imports: [
     BrowserModule,
