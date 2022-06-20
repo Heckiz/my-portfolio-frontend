@@ -1,0 +1,7 @@
+//::ng-deep disable view encapsulation for specific CSS rules, in other words, it gives you access to DOM elements, which are not in your component's HTML.
+::ng-deep .sections {
+  background-color: rgba(68, 160, 159, 0.5);
+  height: 100vh;
+  border: 2px solid black;
+  scroll-behavior: smooth;
+}
