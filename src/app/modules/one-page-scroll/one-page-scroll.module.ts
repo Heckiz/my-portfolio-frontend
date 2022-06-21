@@ -4,6 +4,7 @@ import { OnePageScrollComponent } from './one-page-scroll.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SharingService } from 'src/app/core/services/sharing.service';
 
 
 
@@ -15,7 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     ContactComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class OnePageScrollModule { }

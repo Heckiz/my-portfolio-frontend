@@ -84,6 +84,7 @@ nav {
       height: 100%;
 
       a {
+        position: absolute;
         text-decoration: none;
         color: var(--text-color);
         font-family: $font-menu;
@@ -97,7 +98,7 @@ nav {
           @include desktop {
             font-size: 2.8rem;
           }
-          transition: all 0.5s;
+          transition: all 0.3s ease-in-out;
         }
 
         //text menu for large screen
@@ -132,23 +133,25 @@ nav {
         @include desktop {
           font-size: 2.8rem;
         }
+        transition: all 0.5s;
+
       }
 
       @include tablet {
         //selectors are used to give particular styles to each link
-        a[href="/"]:hover::before {
+        a[href="#home"]:hover::before, .activeHome {
           background: linear-gradient(900deg, #007cf0, #00dfd8);
           content: "HOME";
           @include style-link();
         }
 
-        a[href="/about"]:hover::before {
+        a[href="#about"]:hover::before, .activeAbout {
           background: linear-gradient(900deg, #7928ca, #ff0080);
           content: "ABOUT";
           @include style-link();
         }
 
-        a[href="/contact"]:hover::before {
+        a[href="#contact"]:hover::before, .activeContact {
           background: linear-gradient(900deg, #ff4d4d, #f9cb28);
           content: "CONTACT";
           @include style-link();

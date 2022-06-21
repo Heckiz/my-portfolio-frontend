@@ -1,28 +1,28 @@
 <!-- menu -->
 <nav>
 
-   <div class="theme_toggle">
-    <input id="theme_mode" type="checkbox" checked (click)='changeTheme($event)' />
-    <label class="theme-icon" for="theme_mode"></label>
-   </div>
+    <div class="theme_toggle">
+        <input id="theme_mode" type="checkbox" checked (click)='changeTheme($event)' />
+        <label class="theme-icon" for="theme_mode"></label>
+    </div>
 
     <ul>
         <li [routerLink]="['/']">
-            <a href="#home">
+            <a href="#home" [ngClass]="(pageActive$|async) =='home' ? 'activeHome':'' ">
                 <span class="text-link">HOME</span>
-                <img src="assets/icons/menu/home.png" class="links" alt="home-icon"/>
+                <img src="assets/icons/menu/home.png" class="links" alt="home-icon" />
             </a>
         </li>
         <li [routerLink]="['/']">
-            <a href="#about">
+            <a href="#about" [ngClass]="(pageActive$|async) =='about' ? 'activeAbout':'' ">
                 <span class="text-link">ABOUT</span>
-                <img src="assets/icons/menu/about.png" class="links" alt="about-icon"/>
+                <img src="assets/icons/menu/about.png" class="links" alt="about-icon" />
             </a>
         </li>
         <li [routerLink]="['/']">
-            <a href="#contact">
+            <a href="#contact" [ngClass]="(pageActive$|async) =='contact' ? 'activeContact':'' ">
                 <span class="text-link">CONTACT</span>
-                <img src="assets/icons/menu/contact.png" class="links" alt="contact-icon"/>
+                <img src="assets/icons/menu/contact.png" class="links" alt="contact-icon" />
             </a>
         </li>
     </ul>
