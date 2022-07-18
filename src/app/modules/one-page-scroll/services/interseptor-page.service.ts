@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-@Injectable()
-export class SharingService {
+@Injectable({
+  providedIn: 'root'
+})
+export class InterseptorPageService {
   private pageActiveObservable: BehaviorSubject<string> = new BehaviorSubject<string>('home');
   static changePageActive: any;
   constructor() { }

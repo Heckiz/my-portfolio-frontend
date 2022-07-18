@@ -4,7 +4,10 @@ import { OnePageScrollComponent } from './one-page-scroll.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { SharingService } from 'src/app/core/services/sharing.service';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { SocialBarComponent } from './components/social-bar/social-bar.component';
+import { InterseptorPageService } from './services/interseptor-page.service';
+
 
 
 
@@ -13,10 +16,14 @@ import { SharingService } from 'src/app/core/services/sharing.service';
     OnePageScrollComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavigationComponent,
+    SocialBarComponent
+    
   ],
   imports: [
     CommonModule,
-  ]
+  ],
+  providers:[InterseptorPageService]
 })
 export class OnePageScrollModule { }
