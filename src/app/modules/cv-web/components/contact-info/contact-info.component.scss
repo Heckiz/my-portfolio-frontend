@@ -1,0 +1,16 @@
+
+.contact-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contact-link p:hover{
+    color: rgb(45, 81, 63);
+    text-decoration: underline;
+    transition: all 0.01s ;
+  }
+  
+  .contact-link img:hover{
+    transform: scale(1.05);
+    transition: all 0.01s ease-in-out;
+  }

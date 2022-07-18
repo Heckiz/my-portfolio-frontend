@@ -1,0 +1,46 @@
+{
+    "faboData":
+     {   "contactInfo": {
+            "name": "Fabián",
+            "lastName": "Romero",
+            "label":"",
+            "contactLink":[
+                {
+                    "id": "1",
+                    "src":"https://res.cloudinary.com/heckiz/image/upload/v1656884759/cv-web/icons-contact/email-icon.svg",
+                    "alt":"email-icon",
+                    "href":"mailto:fabo.romero97@gmail.com",
+                    "tooltip":"fabo.romero@gmail.com",
+                    "content":"fabo.romero@gmail.com"
+                },
+                
+                {
+                    "id": "2",
+                    "src":"https://res.cloudinary.com/heckiz/image/upload/v1656884759/cv-web/icons-contact/linkedin-icon.svg",
+                    "alt":"linkedin-icon",
+                    "href":"https://www.linkedin.com/in/fabo-romero/",
+                    "tooltip":"linkedin.com/in/fabo-romero/",
+                    "content":"fabo-romero"
+                },
+                {
+                    "id": "3",
+                    "src":"https://res.cloudinary.com/heckiz/image/upload/v1656884759/cv-web/icons-contact/github-icon.svg",
+                    "alt":"github-icon",
+                    "href":"https://github.com/Heckiz",
+                    "tooltip":"github.com/heckiz",
+                    "content":"Heckiz"
+                },
+                {
+                    "id": "4",
+                    "src":"https://res.cloudinary.com/heckiz/image/upload/v1656884926/cv-web/icons-contact/telegram-icon.svg",
+                    "alt":"telegram-icon",
+                    "href":"mailto:fabo.romero97@gmail.com",
+                    "tooltip":"Chat me!",
+                    "content":"+541160237947"
+                }
+                
+            ]
+        }
+    }
+    
+}
