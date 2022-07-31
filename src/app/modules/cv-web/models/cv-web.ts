@@ -1,5 +1,4 @@
-
-
+//CONTACT-INFO MODEL
 export interface ContactLink {
     id: string;
     src: string;
@@ -23,14 +22,41 @@ export interface Presentation {
     cite: string;
 }
 
-export interface FaboData {
-    contactInfo: ContactInfo;
-    presentation: Presentation;
+//SKILLS MODEL
+export interface SoftSkills {
+    icons: Icon[];
+    skillDetail: SkillDetail[];
 }
 
+export interface HardSkills {
+    icons: Icon[];
+    skillDetail: SkillDetail[];
+}
+
+
+export interface Skills {
+    softSkills: SoftSkills;
+    hardSkills: HardSkills;
+}
+
+export interface Icon {
+    id: string;
+    iconUrl: string;
+    title: string;
+}
+
+export interface SkillDetail {
+    id: string;
+    title: string;
+}
+
+//ROOT MODEL
 export interface RootObject {
     faboData: FaboData;
 }
 
-
-
+export interface FaboData {
+    contactInfo: ContactInfo;
+    presentation: Presentation;
+    skills: Skills;
+}

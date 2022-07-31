@@ -1,0 +1,65 @@
+<section class="d-flex flex-column gap-2 flex-md-row justify-content-center align-items-center">
+
+    <!-- ============ <HARD-SKILLS> ============ -->
+
+    <article class="py-2 col-12 col-md-6 d-flex flex-column">
+
+        <h3 class="caption-box">HARD SKILL</h3>
+
+        <section class="container-fluid d-flex justify-content-center align-items-center flex-column">
+
+            <!--ICONS-->
+            <div class="skills-bar">
+
+                <img *ngFor="let icon of hardSkills.icons" class="skill-icon " [src]="icon.iconUrl" width="30px"
+                    height="30px" data-bs-toggle="tooltip" data-bs-placement="bottom" [title]="icon.title"
+                    [alt]="icon.title">
+
+            </div>
+
+            <!--DATA-->
+            <div class="h6  col-10 p-1 d-flex justify-content-end justify-content-sm-center align-items-center">
+
+                <ul>
+                    <li *ngFor="let skillDetail of hardSkills.skillDetail">{{skillDetail.title}}</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </article>
+    <!-- ============ </HARD-SKILLS> ============ -->
+
+
+    <!-- ============ <SOFT-SKILLS> ============ -->
+    <article class="py-2 col-12 col-md-6 d-flex flex-column">
+
+        <h3 class="caption-box">SOFT SKILL</h3>
+
+        <section class="container-fluid d-flex justify-content-center align-items-center flex-column">
+
+            <!--ICONS-->
+            <div class="skills-bar">
+                <img *ngFor="let icon of softSkill.icons" class="skill-icon " [src]="icon.iconUrl" width="30px"
+                height="30px" data-bs-toggle="tooltip" data-bs-placement="bottom" [title]="icon.title"
+                [alt]="icon.title">
+            </div>
+
+            <!--DATA-->
+            <div class="h6  col-10 p-1 d-flex justify-content-end justify-content-sm-center align-items-center">
+
+                <ul>
+                    <li *ngFor="let skillDetail of softSkill.skillDetail">{{skillDetail.title}} </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </article>
+    <!-- ============ </SOFT-SKILLS> ============ -->
+
+
+</section>

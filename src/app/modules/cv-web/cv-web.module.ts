@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CvWebComponent } from './cv-web.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 
@@ -10,7 +11,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
   declarations: [
     CvWebComponent,
     ContactInfoComponent,
-    PresentationComponent
+    PresentationComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule
