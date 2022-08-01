@@ -4,6 +4,8 @@ import { CvWebComponent } from './cv-web.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { JobsExperienceComponent } from './components/jobs-experience/jobs-experience.component';
+import { StudiesComponent } from './components/studies/studies.component';
 
 
 
@@ -12,7 +14,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     CvWebComponent,
     ContactInfoComponent,
     PresentationComponent,
-    SkillsComponent
+    SkillsComponent,
+    JobsExperienceComponent,
+    StudiesComponent
   ],
   imports: [
     CommonModule

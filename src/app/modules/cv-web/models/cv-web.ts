@@ -50,6 +50,34 @@ export interface SkillDetail {
     title: string;
 }
 
+//JOBS EXPERIENCE
+export interface JobsExperience {
+    id: string;
+    enterprise: string;
+    logoUrl: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    jobDetails: JobDetail[];
+}
+
+export interface JobDetail {
+    id: string;
+    task: string;
+}
+
+//STUDIES
+
+export interface Studies {
+    id: string,
+    institute: string,
+    certified: string,
+    logoUrl: string,
+    startDate: string,
+    endDate: string,
+    description: ""
+}
+
 //ROOT MODEL
 export interface RootObject {
     faboData: FaboData;
@@ -59,4 +87,6 @@ export interface FaboData {
     contactInfo: ContactInfo;
     presentation: Presentation;
     skills: Skills;
+    jobsExperience: JobsExperience[];
+    studies: Studies[]
 }

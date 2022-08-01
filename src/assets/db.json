@@ -46,105 +46,173 @@
       "pictureBgUrl": "https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg",
       "cite": "En un mundo en el que la tecnología avanza de manera constante, es nuestra responsabilidad ser capaces de adaptarnos y transmitir estas herramientas a las necesidades de nuestra sociedad."
     },
-      "skills": {
-        "softSkills": {
-          "icons": [
-            {
-              "id": "1",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234317/cv-web/skills-icons/softskill/responsibility_kmvltj.png",
-              "title": "Responsibility"
-            },
-            {
-              "id": "2",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/perseverance_fxirhr.png",
-              "title": "Perseverance"
-            },
-            {
-              "id": "3",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/empathy_dh0ig9.png",
-              "title": "Empathy"
-            },
-            {
-              "id": "4",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/light-bulb_gje1ql.png",
-              "title": "Curiosity"
-            },
-            {
-              "id": "5",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/adapt_hrxsvv.png",
-              "title": "Adaptability"
-            }
-          ],
-          "skillDetail": [
-            {
-              "id": "1",
-              "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
-            },
-            {
-              "id": "2",
-              "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
-            },
-            {
-              "id": "3",
-              "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
-            },
-            {
-              "id": "4",
-              "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
-            },
-            {
-              "id": "5",
-              "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
-            }
-          ]
-        },
-        "hardSkills": {
-          "icons": [
-            {
-              "id": "1",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/hardskills/typescript_v3bkgf.svg",
-              "title": "Responsibility"
-            },
-            {
-              "id": "2",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/mongodb_dyeo89.svg",
-              "title": "Perseverance"
-            },
-            {
-              "id": "3",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/redux_w7drhv.svg",
-              "title": "Empathy"
-            },
-            {
-              "id": "4",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/node_igzbkz.svg",
-              "title": "Curiosity"
-            },
-            {
-              "id": "5",
-              "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/react_pwbdkk.svg",
-              "title": "Adaptability"
-            }
-          ],
-          "skillDetail": [
-            {
-              "id": "1",
-              "title": "Experiencia trabajando con frameworks modernos de front-end como React y Angular(Ciclo de vida de componentes, servicios, adapters)."
-            },
-            {
-              "id": "2",
-              "title": "Experiencia consumiendo/integrando servicios REST y APIs de terceros."
-            },
-            {
-              "id": "3",
-              "title": "Experiencia de trabajo en Metodologías y entornos ágiles."
-            },
-            {
-              "id": "4",
-              "title": "Culpa velit quidem cumque omnis!"
-            }
-          ]
-        }
+    "skills": {
+      "softSkills": {
+        "icons": [
+          {
+            "id": "1",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234317/cv-web/skills-icons/softskill/responsibility_kmvltj.png",
+            "title": "Responsibility"
+          },
+          {
+            "id": "2",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/perseverance_fxirhr.png",
+            "title": "Perseverance"
+          },
+          {
+            "id": "3",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/empathy_dh0ig9.png",
+            "title": "Empathy"
+          },
+          {
+            "id": "4",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/light-bulb_gje1ql.png",
+            "title": "Curiosity"
+          },
+          {
+            "id": "5",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/softskill/adapt_hrxsvv.png",
+            "title": "Adaptability"
+          }
+        ],
+        "skillDetail": [
+          {
+            "id": "1",
+            "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
+          },
+          {
+            "id": "2",
+            "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
+          },
+          {
+            "id": "3",
+            "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
+          },
+          {
+            "id": "4",
+            "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
+          },
+          {
+            "id": "5",
+            "title": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, ducimus?"
+          }
+        ]
+      },
+      "hardSkills": {
+        "icons": [
+          {
+            "id": "1",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234316/cv-web/skills-icons/hardskills/typescript_v3bkgf.svg",
+            "title": "Responsibility"
+          },
+          {
+            "id": "2",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/mongodb_dyeo89.svg",
+            "title": "Perseverance"
+          },
+          {
+            "id": "3",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/redux_w7drhv.svg",
+            "title": "Empathy"
+          },
+          {
+            "id": "4",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/node_igzbkz.svg",
+            "title": "Curiosity"
+          },
+          {
+            "id": "5",
+            "iconUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659234314/cv-web/skills-icons/hardskills/react_pwbdkk.svg",
+            "title": "Adaptability"
+          }
+        ],
+        "skillDetail": [
+          {
+            "id": "1",
+            "title": "Experiencia trabajando con frameworks modernos de front-end como React y Angular(Ciclo de vida de componentes, servicios, adapters)."
+          },
+          {
+            "id": "2",
+            "title": "Experiencia consumiendo/integrando servicios REST y APIs de terceros."
+          },
+          {
+            "id": "3",
+            "title": "Experiencia de trabajo en Metodologías y entornos ágiles."
+          },
+          {
+            "id": "4",
+            "title": "Culpa velit quidem cumque omnis!"
+          }
+        ]
       }
+    },
+
+    "jobsExperience": [
+      {
+        "id": "1",
+        "enterprise": "Tecnolar",
+        "logoUrl": "https://res.cloudinary.com/heckiz/image/upload/v1659309469/cv-web/jobs-experiences/tecnolar_logo_y7lu3i.png",
+        "position": "Aplication Support",
+        "startDate": "03/04",
+        "endDate": "Actualmente",
+        "jobDetails": [
+          {
+            "id": "1",
+            "task": "dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+          },
+          {
+            "id": "2",
+            "task": "dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+          },
+          {
+            "id": "3",
+            "task": "dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+          },
+          {
+            "id": "4",
+            "task": "dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+          }
+        ]
+      }
+    ],
+    "studies":[
+      {
+        "id":"1",
+        "institute":"UTN",
+        "certified":"Tecnico Superior en Sistemas Informaticos",
+        "logoUrl":"https://res.cloudinary.com/heckiz/image/upload/v1659313017/cv-web/studies/utn_logo_mfhxb6.png",
+        "startDate":"03/2021",
+        "endDate":"Actualmente",
+        "description":"dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+      },
+      {
+        "id":"1",
+        "institute":"Alkemy",
+        "certified":" Job Ready",
+        "logoUrl":"https://res.cloudinary.com/heckiz/image/upload/v1659313017/cv-web/studies/alkemy_logo_pwwkh3.png",
+        "startDate":"04/2021",
+        "endDate":"08/2021",
+        "description":"dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+      },
+      {
+        "id":"1",
+        "institute":"Forge",
+        "certified":"Programa tu Futuro",
+        "logoUrl":"https://res.cloudinary.com/heckiz/image/upload/v1659313017/cv-web/studies/forge_logo_cbbstk.png",
+        "startDate":"03/2021",
+        "endDate":"12/2021",
+        "description":"dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+      },
+      {
+        "id":"1",
+        "institute":"Argentina Programa",
+        "certified":" Primera etapa #SeProgramar",
+        "logoUrl":"https://res.cloudinary.com/heckiz/image/upload/v1659313017/cv-web/studies/argentina-programa_logo_zjabss.png",
+        "startDate":"03/2021",
+        "endDate":"12/2021",
+        "description":"dicta tempore veniam recusandae delectus minus esse consectetur, dignissimos eius, non cum."
+      }
+      
+    ]
   }
 }
