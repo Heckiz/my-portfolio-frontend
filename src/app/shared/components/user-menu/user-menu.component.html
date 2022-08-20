@@ -1,0 +1,5 @@
+<ul *ngIf="userMenuService.accessAllow" class="vstack m-5" style="position: absolute;">
+    <li *ngIf="!authService.isLoggedIn"><button (click)="authService.GoogleAuth()">Login with Google</button></li>
+    <li *ngIf="authService.isLoggedIn"><button (click)="authService.SignOut()">LogOut</button></li>
+    <li><button (click)="getUser()">getUSer</button></li>
+</ul>
