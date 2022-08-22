@@ -1,0 +1,51 @@
+<header class="d-flex flex-column flex-xl-row justify-content-between">
+
+    <div class="col-12 col-xl-5 text-center">
+      <h1 class="font-weight-bold my-1">
+        {{profileData.name + " " +  profileData.lastName}}
+      </h1>
+    </div>
+
+    <div 
+    class="col-12 col-sm-10 col-xl-7 mx-auto py-3 d-flex justify-content-around align-items-center">
+
+      <!-- <a  *ngFor="let contactLink of contactInfoData.contactLink" 
+      class="contact-link mx-1 text-decoration-none text-dark d-flex justify-content-between" target="_blank"
+        [href]="contactLink.href">
+        <img class="mx-1" width="30px" height="30px" [src]="contactLink.src" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" [title]="contactLink.tooltip" [alt]="contactLink.alt">
+        <p class="d-none d-sm-block m-auto">{{contactLink.content}}</p>
+      </a> -->
+
+    </div>
+  </header>
+  <section id="presentation-box" class="d-flex  flex-column flex-sm-row justify-content-center align-items-center px-5">
+
+    <div class="profile-picture col-10 col-sm-5 d-flex mb-3 justify-content-center">
+
+      <!-- TEST PROFILE IMAGE EFECT -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 100 120" width="213" class="image">
+        <title>@FABO</title>
+        <desc>This is me</desc>
+        <defs>
+          <clipPath id="maskImage" clipPathUnits="userSpaceOnUse">
+            <path d="M100 63A50 50 0 110 70C0 42 20 0 48 0c27 0 52 42 52 70z" />
+          </clipPath>
+          <clipPath id="maskBackground" clipPathUnits="userSpaceOnUse">
+            <path d="M190 101a50 50 0 01-50 50 50 50 0 01-50-50 50 50 0 0150-50 50 50 0 0150 50z" />
+          </clipPath>
+        </defs>
+        <!-- Background image -->
+        <g clip-path="url(#maskImage)" transform="translate(0 -7)">
+          <image clip-path="url(#maskBackground)" width="120" height="110" x="70" y="38"
+          [attr.xlink:href]="profileData.profilePictureBgUrl" transform="translate(-90 -31)" />
+          <!-- Foreground image -->
+          <image width="120" height="144" x="-15" y="0" fill="none" class="image__foreground"
+            [attr.xlink:href]="profileData.profilePictureUrl" />
+        </g>
+      </svg>
+      <!-- / TEST PROFILE IMAGE EFECT -->
+    </div>
+    <blockquote class="col-12  col-sm-6 py-4 h5 cite mx-4 mt-5">{{profileData.cite}}<br>
+    </blockquote>
+  </section>
