@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { JobsExperience, RootObject } from '../../models/cv-web';
-import { CvWebService } from '../../services/cv-web.service';
+import { ExperienceModel } from '../../models/experience';
+import { ExperienceService } from '../../services/experience.service';
 
 @Component({
   selector: 'app-jobs-experience',
@@ -9,13 +9,13 @@ import { CvWebService } from '../../services/cv-web.service';
 })
 export class JobsExperienceComponent implements OnInit {
 
-  constructor(private jobsExperience: CvWebService) { }
+  constructor(private jobsExperience: ExperienceService) { }
 
-  jobsExperienceData!: JobsExperience[]
+  jobsExperienceData!: ExperienceModel[]
   ngOnInit(): void {
-    this.jobsExperience.getData().subscribe((data: RootObject) => {
-      this.jobsExperienceData = data.faboData.jobsExperience
-    })
+    this.jobsExperience.getAllExperiences().subscribe((data: ExperienceModel[]) =>
+      this.jobsExperienceData = data
+    )
   }
 }
 

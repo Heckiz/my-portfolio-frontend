@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RootObject, Studies } from '../../models/cv-web';
-import { CvWebService } from '../../services/cv-web.service';
+import { StudyModel } from '../../models/study';
+import { StudiesService } from '../../services/study.service';
 
 @Component({
   selector: 'app-studies',
@@ -9,12 +9,12 @@ import { CvWebService } from '../../services/cv-web.service';
 })
 export class StudiesComponent implements OnInit {
 
-  constructor(private studies:CvWebService) { }
-  studiesData!:Studies[]
+  constructor(private studies: StudiesService) { }
+  studiesData!: StudyModel[]
   ngOnInit(): void {
-    this.studies.getData().subscribe((data: RootObject) => {
-      this.studiesData = data.faboData.studies
-    })
+    this.studies.getAllStudies().subscribe((data: StudyModel[]) =>
+      this.studiesData = data
+    )
   }
 
 }
